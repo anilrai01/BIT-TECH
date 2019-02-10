@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
+
+$brand : #1e90ff;
+$yellow: #ffc60c;
+$orange: #ff5b0c;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    z-index: 1;
+}
+
+#head{
+    position: relative;
+    width:100%;
+    height: 90vh;
+    // background: url(../img/bg.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    overflow: hidden;
+}
+
+#head::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180.5px;
+    background: url(../img/Wavy.png);
+    background-repeat: no-repeat;
+    z-index: 10 ;
+}
+
+.bg-overlay{
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    // background: linear-gradient(rgb(36, 144, 255),rgb(58,46,255) );
+    background: rgba(58,46,255,1);
+    
+}
+
+
+.navbar-light .navbar-brand{
+    color: #fff;
+}
+
+#head nav ul li a{
+    position: relative;
+    margin-right: 5px;
+    padding: 15px 10px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+//Design active state
+.navbar .navbar-nav .nav-item .active{
+    background:  $orange;
+    transition: 1s ease-in-out;
+}
+
+#head nav ul li{
+    padding: 10px 5px;
+}
+
+#head nav ul li a::before{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    background: $orange;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+#head nav ul li a:hover::before{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#head .banner{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.banner p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.banner h3{
+    margin-top: -10px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+//Focus Button
+
+// .btn.focus, .btn:focus{
+//     box-shadow: 0 0 0 0 rgba(255,255,255,1);
+// }
+// .btn-outline-secondary.focus, .btn-outline-secondary:focus{
+//     box-shadow: 0 0 0 0 rgba(255,255,255,1);
+// }
+
+// Button ! Removed
+
+// #head .link a{
+//     position: absolute;
+//     bottom: 15%;
+//     left: 50%;
+//     color: #fff;
+//     text-transform: uppercase;
+//     -webkit-transform: translate(-50%,-50%);
+//     transform: translate(-50%,-50%);
+//     padding: 8px 40px 10px;
+//     border: 2px solid #fff;
+//     border-radius: 50px;
+//     text-decoration: none;
+//     transition: 0.4s ease-in-out;
+// }
+
+#head .link a:hover{
+    background: $brand;
+}
+
+.navbar-default{
+    background: transparent;
+    transition: 0.6s ease-in-out;
+}
+
+.top-nav-collapse{
+    background:rgba(58, 46, 255, 1);
+    // background: rgba(255,255,255,1);
+    padding-bottom: 10px;
+    margin-top: -12px;
+    box-shadow: 5px 20px 50px rgba(30, 144, 255, 0.2);
+}
+
+
+#head .container{
+    position: relative;
+}
+.toogle{
+    position: absolute;
+    right: 25px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+}
+
+
+//Starting ABOUT session
+
+#about{
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;   
+}
+
+#about h1::before{
+    content:'';
+    position: absolute;
+    background: $brand;
+    width: 4%;
+    height: 3px;
+    bottom: -5px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+#about:hover h1::before{
+    width: 10%;
+}
+
+
+
+
+ //Services session
+ #service{
+    width: 100%;
+    height: 800px;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+ }
+
+ 
+.row-box{
+    width: 100%;
+    padding: 0 0 50px;
+    // display: flex;
+    // justify-content: space-between;
+}
+.row-box-con{
+    position: relative;
+    height: 400px;
+    flex-basis: 30%;
+    display: block;
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 30px;
+	box-shadow: -10px 25px 50px rgba(0,0,0,0.2);	
+    transition: 0.5s ease-in-out;
+}
+
+.row-box-con:hover{
+    box-shadow: -20px 50px 100px rgba(0,0,0,0.4)
+}
+
+
+
+
+
+
+//Media Query
+@media (max-width: 801px)
+{
+    #banner{
+        padding-left: 20px;
+        justify-content: center;
+    }
+    // .row-box{
+    //     display: block; 
+    // }
+}
+
+@media (min-width: 800px){
+    .row-box{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// @media (max-width: 415px)
+// {
+//     #about{
+//         background: Red;
+//     }
+//     .banner{
+//         margin-left: 20px;
+//     }
+
+//     #head::before{
+//         visibility: hidden;
+//     }
+
+
+//     #head nav ul{
+//         display: block; 
+//     }
+
+//     #head nav ul{
+//         position: absolute;
+//         display: block;
+//         top: 90%;
+//         left: 0;
+//         margin-left: 0;
+//     }
+
+
+//     .nav-cover{
+//         width: 250px;
+//     }
+//     .nav-cover::before{
+//         width: 100%;
+//     }
+
+//     #head nav ul li a{
+//         width: 110px;
+//     }
+//     .toggle{
+//         display: block;
+//     }
+// }
