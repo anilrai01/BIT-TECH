@@ -73,9 +73,9 @@ body{
     transition: 1s ease-in-out;
 }
 
-#head nav ul li{
-    padding: 10px 5px;
-}
+// #head nav ul li{
+//     padding: 10px 0;
+// }
 
 #head nav ul li a::before{
     content: '';
@@ -197,7 +197,6 @@ body{
 #about:hover h1::before{
     width: 10%;
 }
-
 
 
 

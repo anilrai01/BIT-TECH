@@ -56,9 +56,6 @@ body {
   background: #ff5b0c;
   transition: 1s ease-in-out; }
 
-#head nav ul li {
-  padding: 10px 5px; }
-
 #head nav ul li a::before {
   content: '';
   position: absolute;
