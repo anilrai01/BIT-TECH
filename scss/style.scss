@@ -69,7 +69,7 @@ body{
 
 //Design active state
 .navbar .navbar-nav .nav-item .active{
-    background:  $orange;
+    
     transition: 1s ease-in-out;
 }
 
@@ -80,20 +80,20 @@ body{
 #head nav ul li a::before{
     content: '';
     position: absolute;
-    display: block;
     bottom: 0;
     left: 0;
     background: $orange;
-    width: 0;
-    height: 100%;
-    transition: 0.5s ease-in-out;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
     box-sizing: border-box;
-    z-index: -1;
+    visibility: hidden; 
+    transition: all 0.3s ease-in-out 0s; 
 }
 
 #head nav ul li a:hover::before{
-    width: 100%;
-    box-sizing: border-box;
+   visibility: visible;
+   transform: scaleX(1);
 }
 
 #head .banner{
@@ -197,8 +197,6 @@ body{
 #about:hover h1::before{
     width: 10%;
 }
-
-
 
 
  //Services session

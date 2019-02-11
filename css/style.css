@@ -49,7 +49,6 @@ body {
   box-sizing: border-box; }
 
 .navbar .navbar-nav .nav-item .active {
-  background: #ff5b0c;
   transition: 1s ease-in-out; }
 
 #head nav ul li {
@@ -58,19 +57,19 @@ body {
 #head nav ul li a::before {
   content: '';
   position: absolute;
-  display: block;
   bottom: 0;
   left: 0;
   background: #ff5b0c;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
   box-sizing: border-box;
-  z-index: -1; }
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s; }
 
 #head nav ul li a:hover::before {
-  width: 100%;
-  box-sizing: border-box; }
+  visibility: visible;
+  transform: scaleX(1); }
 
 #head .banner {
   position: absolute;
