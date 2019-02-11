@@ -92,8 +92,7 @@ body{
 }
 
 #head nav ul li a:hover::before{
-    width: 100%;
-    box-sizing: border-box;
+    visibility: visible;
 }
 
 #head .banner{
