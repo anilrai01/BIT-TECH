@@ -47,7 +47,6 @@ body{
     height: 100%;
     // background: linear-gradient(rgb(36, 144, 255),rgb(58,46,255) );
     background: rgba(58,46,255,1);
-    
 }
 
 
@@ -82,7 +81,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    background: $orange;
+    background: $yellow;
     width: 100%;
     height: 3px;
     transform: scaleX(0);
@@ -115,6 +114,13 @@ body{
     margin-top: -10px;
     font-size: 16px;
     margin-left: 10px;
+}
+
+.image{
+    position: absolute;
+    top: 25%;
+    right: 0;
+    z-index: 30;
 }
 
 //Focus Button
@@ -173,12 +179,26 @@ body{
     display: none;
 }
 
+.contactno{
+    width: 170px;
+    height: 50px;
+    padding: 11px 5px 10px 10px;
+    background: $yellow;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.contactno:hover{
+    transform: scale(1.001);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
 
 //Starting ABOUT session
 
 #about{
     width: 100%;
-    padding: 80px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;   
 }
@@ -203,10 +223,24 @@ body{
  #service{
     width: 100%;
     height: 800px;
-    padding: 80px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
  }
+
+ #service h1::before{
+    content:'';
+    position: absolute;
+    background: $brand;
+    width: 4%;
+    height: 3px;
+    bottom: -5px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+#service h1::before{
+    width: 10%;
+}
 
  
 .row-box{

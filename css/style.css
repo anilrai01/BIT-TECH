@@ -59,7 +59,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #ff5b0c;
+  background: #ffc60c;
   width: 100%;
   height: 3px;
   transform: scaleX(0);
@@ -89,6 +89,12 @@ body {
   font-size: 16px;
   margin-left: 10px; }
 
+.image {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: 30; }
+
 #head .link a:hover {
   background: #1e90ff; }
 
@@ -113,9 +119,21 @@ body {
   color: #fff;
   display: none; }
 
+.contactno {
+  width: 170px;
+  height: 50px;
+  padding: 11px 5px 10px 10px;
+  background: #ffc60c;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out; }
+
+.contactno:hover {
+  transform: scale(1.001);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+
 #about {
   width: 100%;
-  padding: 80px 0;
+  padding: 100px 0;
   position: relative;
   overflow: hidden; }
 
@@ -135,9 +153,22 @@ body {
 #service {
   width: 100%;
   height: 800px;
-  padding: 80px 0;
+  padding: 100px 0;
   position: relative;
   overflow: hidden; }
+
+#service h1::before {
+  content: '';
+  position: absolute;
+  background: #1e90ff;
+  width: 4%;
+  height: 3px;
+  bottom: -5px;
+  left: 15px;
+  transition: 0.5s ease-in-out; }
+
+#service h1::before {
+  width: 10%; }
 
 .row-box {
   width: 100%;
