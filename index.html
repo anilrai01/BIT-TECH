@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bit Tech Solution Inc.</title>
 
-    
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -25,14 +24,18 @@
 
         <!-- Nav Session -->
         <nav class="navbar navbar-default fixed-top navbar-expand navbar-light pt-4">
+              
             <div class="container" style="max-width: 1250px;">
 
-                <div class="toogle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                
 
                 <a href="index.html" class="navbar-brand">BitTech</a>
                 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id = "navbarNav">
+
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"><a href="#head" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link">About US</a></li>
@@ -42,6 +45,7 @@
                         <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Contact US</a></li>
                     </ul>
+                </div>
                     <div class="contactno">
                         <i class="fas fa-phone" style="transform: rotate(90deg)"></i>
                         <span>+977 9813008156</span>
@@ -52,11 +56,12 @@
         <div class="banner">
             <p style="color: rgb(255, 198, 12);margin-bottom:-5px;">Mobile & Web</p>
             <p class="ml-2">Application Development</p>
-            <h3>Complete IT Solution</h3>
+            <h3>BitTech is one of the best digital agency with experts team of programmer, <br> designer,developer and SEO
+                    experts. We help you to grow your business <br> through perfect web and mobile applications. </h3>
         </div>
 
         <div class="image">
-            <img src="img/md.png" alt="">
+            <img src="img/md.png" alt="" class="wow fadeInUp">
         </div>  
         
 
@@ -67,13 +72,9 @@
     
     <!-- About Session -->
     <section id="about">
-        <div class="circle"></div>
+        
             <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>About US</h1>
-                </div>
-            </div>
+           <h1>About US</h1>
             
             <div class="row">
                 <div class="col-md-6 col-sm-12 p-5 text-justify">
@@ -82,8 +83,8 @@
                     
                 </div>
 
-                <div class="col-md-6 col-sm-12 bg-secondary">
-                        asdfasdfasdfasdfasdfasdfasdf
+                <div class="col-md-6 col-sm-12">
+                      
                 </div>
             </div>
 
@@ -95,23 +96,67 @@
 
     <section id="service">
         <div class="container">
-            <h1>Services </h1><br><br>
+            <h1>Services </h1>
+            <br><br><br><br>
+                  
             <div class="row">
-                    <div class="col-md-12">
-                    <div class="row-box">
-                        <div class="row-box-con"> SITE </div>
-                        <div class="row-box-con"> UNDER </div>
-                        <div class="row-box-con"> CONSTRUCTION </div>
-                    </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
         </div>
     </section>
+
+    <!-- Particle js -->
+    <section id="particlee">
+       <div class="container-fluid">
+            <div id="particles-js" class="particle-div">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/scroll.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
