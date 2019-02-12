@@ -19,11 +19,12 @@ body{
     position: relative;
     width:100%;
     height: 90vh;
-    // background: url(../img/bg.jpg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: hidden;
+    padding: 0 0 40px;
 }
 
 #head::before{
@@ -35,17 +36,19 @@ body{
     height: 180.5px;
     background: url(../img/Wavy.png);
     background-repeat: no-repeat;
-    z-index: 10 ;
+    background-attachment: cover;
+    z-index: 30 ;
 }
 
 .bg-overlay{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;    
     width: 100%;
     height: 100%;
     // background: linear-gradient(rgb(36, 144, 255),rgb(58,46,255) );
-    background: rgba(58,46,255,1);
+    // background: rgba(58,46,255,1);
+    background: rgba(0,0,0,0.9);
 }
 
 
@@ -158,25 +161,15 @@ body{
 }
 
 .top-nav-collapse{
-    background:rgba(58, 46, 255, 1);
-    // background: rgba(255,255,255,1);
-    padding-bottom: 10px;
-    margin-top: -12px;
+    // background:rgba(58, 46, 255, 1);
+    background: rgba(55,60,63,0.9);
+    padding-bottom: 5px;
+    margin-top: -20px;
 }
 
-
-#head .container{
-    position: relative;
+.navbar-nav li .active{
+    border: inset 3px solid $yellow;
 }
-.toogle{
-    position: absolute;
-    right: 25px;
-    box-sizing: border-box;
-    font-size: 2rem;
-    color: #fff;
-    display: none;
-}
-
 .contactno{
     width: 170px;
     height: 50px;
@@ -195,14 +188,16 @@ body{
 
 #about{
     width: 100%;
-    padding: 100px 0;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;   
 }
+
 #about h1{
     position: relative;
     display: inline-block;
-    left: calc(50% - 70px)
+    left: calc(50% - 80px);
+    margin: 0 auto;
 }
 #about h1::before{
     content:'';
@@ -233,6 +228,7 @@ body{
     display: inline-block;
     position: relative;
     left: calc(50% - 70px);
+    margin: 0 auto;
 }
  #service h1::before{
     content:'';
@@ -322,6 +318,100 @@ body{
 }
 
 
+//Portfolio
+#portfolio{
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+}
+
+#portfolio h1{
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 70px);
+    margin: 0 auto;
+}
+
+
+#portfolio h1{
+    position: relative;
+    display: inline-block;
+    left: calc(50% - 100px);
+    margin: 0 auto;
+}
+#portfolio h1::before{
+    content:'';
+    position: absolute;
+    background: $brand;
+    width: 80%;
+    height: 4px;
+    bottom: -10px;
+    left: 15px;
+    transform: scaleX(0.5);
+    transition: 0.5s ease-in-out;
+}
+
+#portfolio:hover h1::before{
+    transform: scaleX(1);
+}
+
+
+#portfolio .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    // flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+#portfolio .grid-item{
+    width: 255px;
+    padding: 15px;
+    margin: 11px;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.web{
+    background: blue;
+}
+
+.blog{
+    background: red;
+}
+
+.graphics{
+    background: black;
+}
+
+.seo{
+    background: teal;
+}
+
+
+
+#portfolio .portfolio-menu ul{
+    justify-content: center;
+    margin-left: calc(30%);
+}
+
+.portfolio-menu ul li{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px 7px;
+    margin: 15px 10px;
+    border: 2px solid $brand;
+    border-radius: 20px;
+    color: $brand;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio-menu ul .filter-active, .portfolio-menu ul li:hover{
+    background: $brand;
+    color: #fff;
+}
 
 
 

@@ -12,7 +12,12 @@ body {
   position: relative;
   width: 100%;
   height: 90vh;
-  overflow: hidden; }
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 0 0 40px; }
 
 #head::before {
   content: '';
@@ -23,15 +28,16 @@ body {
   height: 180.5px;
   background: url(../img/Wavy.png);
   background-repeat: no-repeat;
-  z-index: 10; }
+  background-attachment: cover;
+  z-index: 30; }
 
 .bg-overlay {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3a2eff; }
+  background: rgba(0, 0, 0, 0.9); }
 
 .navbar-light .navbar-brand {
   color: #fff; }
@@ -102,20 +108,12 @@ body {
   transition: 0.6s ease-in-out; }
 
 .top-nav-collapse {
-  background: #3a2eff;
-  padding-bottom: 10px;
-  margin-top: -12px; }
+  background: rgba(55, 60, 63, 0.9);
+  padding-bottom: 5px;
+  margin-top: -20px; }
 
-#head .container {
-  position: relative; }
-
-.toogle {
-  position: absolute;
-  right: 25px;
-  box-sizing: border-box;
-  font-size: 2rem;
-  color: #fff;
-  display: none; }
+.navbar-nav li .active {
+  border: inset 3px solid #ffc60c; }
 
 .contactno {
   width: 170px;
@@ -130,14 +128,15 @@ body {
 
 #about {
   width: 100%;
-  padding: 100px 0;
+  padding: 80px 0;
   position: relative;
   overflow: hidden; }
 
 #about h1 {
   position: relative;
   display: inline-block;
-  left: calc(50% - 70px); }
+  left: calc(50% - 80px);
+  margin: 0 auto; }
 
 #about h1::before {
   content: '';
@@ -160,7 +159,8 @@ body {
 #service h1 {
   display: inline-block;
   position: relative;
-  left: calc(50% - 70px); }
+  left: calc(50% - 70px);
+  margin: 0 auto; }
 
 #service h1::before {
   content: '';
@@ -234,6 +234,82 @@ body {
   bottom: 0;
   right: 0;
   left: 0; }
+
+#portfolio {
+  position: relative;
+  width: 100%;
+  padding: 80px 0; }
+
+#portfolio h1 {
+  display: inline-block;
+  position: relative;
+  left: calc(50% - 70px);
+  margin: 0 auto; }
+
+#portfolio h1 {
+  position: relative;
+  display: inline-block;
+  left: calc(50% - 100px);
+  margin: 0 auto; }
+
+#portfolio h1::before {
+  content: '';
+  position: absolute;
+  background: #1e90ff;
+  width: 80%;
+  height: 4px;
+  bottom: -10px;
+  left: 15px;
+  transform: scaleX(0.5);
+  transition: 0.5s ease-in-out; }
+
+#portfolio:hover h1::before {
+  transform: scaleX(1); }
+
+#portfolio .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 10px auto;
+  justify-content: space-between; }
+
+#portfolio .grid-item {
+  width: 255px;
+  padding: 15px;
+  margin: 11px;
+  color: white;
+  box-sizing: border-box; }
+
+.web {
+  background: blue; }
+
+.blog {
+  background: red; }
+
+.graphics {
+  background: black; }
+
+.seo {
+  background: teal; }
+
+#portfolio .portfolio-menu ul {
+  justify-content: center;
+  margin-left: calc(30%); }
+
+.portfolio-menu ul li {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px 7px;
+  margin: 15px 10px;
+  border: 2px solid #1e90ff;
+  border-radius: 20px;
+  color: #1e90ff;
+  transition: 0.3s ease-in-out; }
+
+.portfolio-menu ul .filter-active, .portfolio-menu ul li:hover {
+  background: #1e90ff;
+  color: #fff; }
 
 @media (max-width: 801px) {
   #banner {

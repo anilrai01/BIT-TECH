@@ -29,10 +29,23 @@
     }
   });
 
+  $(window).scroll(function() {
+    if ($(".navbar-default").offset().top > 20){
+      $("#head nav ul li").addClass("changeFont");
+    } else {
+      $("#head nav ul li a").removeClass("changeFont");
+    }
+  });
+
   //Active add and remove
   $(document).on('click','#head ul li a', function(){
       $(this).addClass('active').siblings().removeClass('active')
   })
-  
+
+  //Portfolio
+  $(document).on('click', '.portfolio-menu ul li', function(){
+    $(this).addClass('filter-active').siblings().removeClass('filter-active')
+  })
+
 
 })(jQuery);
