@@ -35,7 +35,7 @@ body{
     width: 100%;
     height: 180.5px;
     background: url(../img/Wavy.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: cover;
     z-index: 30 ;
 }
@@ -55,11 +55,13 @@ body{
 .navbar-light .navbar-brand{
     color: #fff;
 }
-
+#head nav ul li{
+    padding: 8px;
+}
 #head nav ul li a{
     position: relative;
     margin-right: 5px;
-    padding: 15px 10px;
+    padding: 10px 10px;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -74,14 +76,10 @@ body{
     transition: 1s ease-in-out;
 }
 
-#head nav ul li{
-    padding: 10px 5px;
-}
-
 #head nav ul li a::before{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
     background: $yellow;
     width: 100%;
@@ -125,35 +123,6 @@ body{
     z-index: 30;
 }
 
-//Focus Button
-
-// .btn.focus, .btn:focus{
-//     box-shadow: 0 0 0 0 rgba(255,255,255,1);
-// }
-// .btn-outline-secondary.focus, .btn-outline-secondary:focus{
-//     box-shadow: 0 0 0 0 rgba(255,255,255,1);
-// }
-
-// Button ! Removed
-
-// #head .link a{
-//     position: absolute;
-//     bottom: 15%;
-//     left: 50%;
-//     color: #fff;
-//     text-transform: uppercase;
-//     -webkit-transform: translate(-50%,-50%);
-//     transform: translate(-50%,-50%);
-//     padding: 8px 40px 10px;
-//     border: 2px solid #fff;
-//     border-radius: 50px;
-//     text-decoration: none;
-//     transition: 0.4s ease-in-out;
-// }
-
-#head .link a:hover{
-    background: $brand;
-}
 
 .navbar-default{
     background: transparent;
@@ -166,9 +135,14 @@ body{
     padding-bottom: 5px;
     margin-top: -20px;
 }
+ .navbar-nav ul li{
+    padding: 10px 5px;
+    border-bottom: 3px solid transparent;
+}
 
 .navbar-nav li .active{
-    border: inset 3px solid $yellow;
+    border-bottom: 3px solid $yellow;
+    
 }
 .contactno{
     width: 170px;
@@ -217,17 +191,16 @@ body{
 
 
 
-
  //Services session
  #service{
     width: 100%;
-    padding: 100px 0;
+    padding: 80px 0;
     // overflow: hidden;
  }
 #service h1{
     display: inline-block;
     position: relative;
-    left: calc(50% - 70px);
+    left: calc(50% - 90px);
     margin: 0 auto;
 }
  #service h1::before{
@@ -414,10 +387,106 @@ body{
 }
 
 
+//Team Section
+#team{
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+}
+
+#team h1{
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 70px);
+    margin: 0 auto;
+}
+
+
+#team h1{
+    position: relative;
+    display: inline-block;
+    left: calc(50% - 100px);
+    margin: 0 auto;
+}
+#team h1::before{
+    content:'';
+    position: absolute;
+    background: $brand;
+    width: 80%;
+    height: 4px;
+    bottom: -10px;
+    left: 13px;
+    transform: scaleX(0.5);
+    transition: 0.5s ease-in-out;
+}
+
+#team:hover h1::before{
+    transform: scaleX(1);
+}
+
+#team h6{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -5%;
+}
+#team .card .card-body h5{
+    text-align:center;
+}
+#team .card .card-body p{
+    margin-top: -5px;
+    text-align:center;
+}
+#team .card .card-body p i{
+    margin-right: 5px;
+}
 
 
 
+//Contact US
 
+#contact{
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+}
+
+#contact h1{
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 70px);
+    margin: 0 auto;
+}
+
+
+#contact h1{
+    position: relative;
+    display: inline-block;
+    left: calc(50% - 100px);
+    margin: 0 auto;
+}
+#contact h1::before{
+    content:'';
+    position: absolute;
+    background: $brand;
+    width: 80%;
+    height: 4px;
+    bottom: -10px;
+    left: 20px;
+    transform: scaleX(0.5);
+    transition: 0.5s ease-in-out;
+}
+
+#contact:hover h1::before{
+    transform: scaleX(1);
+}
+
+#contact h6{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -5%;
+}
 
 
 

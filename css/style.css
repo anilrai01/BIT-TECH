@@ -27,7 +27,7 @@ body {
   width: 100%;
   height: 180.5px;
   background: url(../img/Wavy.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-attachment: cover;
   z-index: 30; }
 
@@ -42,10 +42,13 @@ body {
 .navbar-light .navbar-brand {
   color: #fff; }
 
+#head nav ul li {
+  padding: 8px; }
+
 #head nav ul li a {
   position: relative;
   margin-right: 5px;
-  padding: 15px 10px;
+  padding: 10px 10px;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -56,13 +59,10 @@ body {
 .navbar .navbar-nav .nav-item .active {
   transition: 1s ease-in-out; }
 
-#head nav ul li {
-  padding: 10px 5px; }
-
 #head nav ul li a::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
   background: #ffc60c;
   width: 100%;
@@ -100,9 +100,6 @@ body {
   right: 0;
   z-index: 30; }
 
-#head .link a:hover {
-  background: #1e90ff; }
-
 .navbar-default {
   background: transparent;
   transition: 0.6s ease-in-out; }
@@ -112,8 +109,12 @@ body {
   padding-bottom: 5px;
   margin-top: -20px; }
 
+.navbar-nav ul li {
+  padding: 10px 5px;
+  border-bottom: 3px solid transparent; }
+
 .navbar-nav li .active {
-  border: inset 3px solid #ffc60c; }
+  border-bottom: 3px solid #ffc60c; }
 
 .contactno {
   width: 170px;
@@ -154,12 +155,12 @@ body {
 
 #service {
   width: 100%;
-  padding: 100px 0; }
+  padding: 80px 0; }
 
 #service h1 {
   display: inline-block;
   position: relative;
-  left: calc(50% - 70px);
+  left: calc(50% - 90px);
   margin: 0 auto; }
 
 #service h1::before {
@@ -310,6 +311,90 @@ body {
 .portfolio-menu ul .filter-active, .portfolio-menu ul li:hover {
   background: #1e90ff;
   color: #fff; }
+
+#team {
+  position: relative;
+  width: 100%;
+  padding: 80px 0; }
+
+#team h1 {
+  display: inline-block;
+  position: relative;
+  left: calc(50% - 70px);
+  margin: 0 auto; }
+
+#team h1 {
+  position: relative;
+  display: inline-block;
+  left: calc(50% - 100px);
+  margin: 0 auto; }
+
+#team h1::before {
+  content: '';
+  position: absolute;
+  background: #1e90ff;
+  width: 80%;
+  height: 4px;
+  bottom: -10px;
+  left: 13px;
+  transform: scaleX(0.5);
+  transition: 0.5s ease-in-out; }
+
+#team:hover h1::before {
+  transform: scaleX(1); }
+
+#team h6 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -5%; }
+
+#team .card .card-body h5 {
+  text-align: center; }
+
+#team .card .card-body p {
+  margin-top: -5px;
+  text-align: center; }
+
+#team .card .card-body p i {
+  margin-right: 5px; }
+
+#contact {
+  position: relative;
+  width: 100%;
+  padding: 80px 0; }
+
+#contact h1 {
+  display: inline-block;
+  position: relative;
+  left: calc(50% - 70px);
+  margin: 0 auto; }
+
+#contact h1 {
+  position: relative;
+  display: inline-block;
+  left: calc(50% - 100px);
+  margin: 0 auto; }
+
+#contact h1::before {
+  content: '';
+  position: absolute;
+  background: #1e90ff;
+  width: 80%;
+  height: 4px;
+  bottom: -10px;
+  left: 20px;
+  transform: scaleX(0.5);
+  transition: 0.5s ease-in-out; }
+
+#contact:hover h1::before {
+  transform: scaleX(1); }
+
+#contact h6 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -5%; }
 
 @media (max-width: 801px) {
   #banner {
