@@ -491,16 +491,43 @@ body{
 #contact .container-fluid{
     background: $brand;
     width: 100%;
-    margin: 80px 0;
+    margin: 50px 0;
 }
 
 .contact-form{
     margin: auto;
-    width: 900px;
+    width: 1100px;
     height: 100%;
     background: #fff;
+    border: 15px solid rgba(218, 218, 218, 1);
 }
 
+#contact .contact-form h2{
+    color: $orange;
+}
+
+#contact .address{
+    position: relative;
+    width: 100%;
+}
+
+#contact .address i, #contact .address i p{
+    float: left;
+    margin: 20px 15px;
+    
+}
+#contact .address i{
+    color: $brand;
+}
+
+.clr{
+    clear: both;
+}
+
+#contact .address p{
+    font-size: 16px;
+    margin-bottom: 0;
+}
 
 
 
