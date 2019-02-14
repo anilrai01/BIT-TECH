@@ -48,7 +48,7 @@ body{
     height: 100%;
     // background: linear-gradient(rgb(36, 144, 255),rgb(58,46,255) );
     // background: rgba(58,46,255,1);
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.85);
 }
 
 
@@ -63,7 +63,7 @@ body{
     margin-right: 5px;
     padding: 10px 10px;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -71,10 +71,10 @@ body{
 }
 
 //Design active state
-.navbar .navbar-nav .nav-item .active{
+// .navbar .navbar-nav .nav-item .active{
     
-    transition: 1s ease-in-out;
-}
+//     transition: 1s ease-in-out;
+// }
 
 #head nav ul li a::before{
     content: '';
@@ -88,6 +88,7 @@ body{
     box-sizing: border-box;
     visibility: hidden; 
     transition: all 0.3s ease-in-out 0s; 
+    -moz-transform: scaleX(0);
 }
 
 #head nav ul li a:hover::before{
@@ -97,11 +98,9 @@ body{
 
 #head .banner{
     position: absolute;
-    top: 50%;
-    left: 30%;
     color: #fff;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    top: 35%;
+    left: 0;
 }
 
 .banner p{
@@ -111,16 +110,17 @@ body{
 }
 
 .banner h3{
-    margin-top: -10px;
-    font-size: 16px;
+    line-height: 1.5;
+    font-size: 17px;
     margin-left: 10px;
+    letter-spacing: 1px;
 }
 
 .image{
     position: absolute;
-    top: 25%;
-    right: 0;
-    z-index: 30;
+    top: 50px;
+    right: -5%;
+    z-index: 999;
 }
 
 
@@ -141,9 +141,10 @@ body{
 }
 
 .navbar-nav li .active{
-    border-bottom: 3px solid $yellow;
-    
+    border-bottom: 3.5px solid $yellow;
+    -moz-border-bottom: 3px solid $yellow;
 }
+
 .contactno{
     width: 170px;
     height: 50px;
@@ -164,7 +165,8 @@ body{
     width: 100%;
     padding: 80px 0;
     position: relative;
-    overflow: hidden;   
+    overflow: hidden;
+    z-index: 20;
 }
 
 #about h1{
@@ -332,7 +334,7 @@ body{
 #portfolio .grid{
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    // grid-template-columns: auto auto auto;
     // flex-wrap: wrap;
     margin: 10px auto;
     justify-content: space-between;
@@ -376,7 +378,7 @@ body{
     padding: 5px 20px 7px;
     margin: 15px 10px;
     border: 2px solid $brand;
-    border-radius: 20px;
+    border-radius: 5px;
     color: $brand;
     transition: 0.3s ease-in-out;
 }
@@ -488,13 +490,15 @@ body{
     margin-left: -5%;
 }
 
-#contact .container-fluid{
-    background: $brand;
+#contact .contact-session{
+    background: $yellow;
     width: 100%;
     margin: 50px 0;
 }
 
 .contact-form{
+    position: relative;
+    top: 0;
     margin: auto;
     width: 1100px;
     height: 100%;
@@ -529,7 +533,41 @@ body{
     margin-bottom: 0;
 }
 
+h1{
+    text-transform: uppercase;
+}
 
+#contact .sbm{
+    border: 2px solid $brand;
+    padding: 10px 30px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#contact .sbm:hover{
+    color: white;
+    background: $brand;
+}
+
+#contact .container-fluid .con-overlay-top{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+#contact .container-fluid .con-overlay-bottom{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
 
 
 
@@ -551,6 +589,12 @@ body{
         justify-content: space-between;
     }
 }
+
+// @media (max-width: 1920px){
+//     #head .image{
+//         margin: -6% -5% 0 0 ;
+//     }
+// }
 
 // @media (max-width: 415px)
 // {
