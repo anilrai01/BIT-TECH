@@ -443,6 +443,10 @@ body{
     margin-right: 5px;
 }
 
+#team .row .card{
+    max-width: 255px;
+}
+
 
 
 //Contact US
@@ -491,13 +495,15 @@ body{
 }
 
 #contact .contact-session{
+    position: relative;
     background: $yellow;
     width: 100%;
+    height: auto;
     margin: 50px 0;
 }
 
 .contact-form{
-    position: relative;
+    position: absolute;
     top: 0;
     margin: auto;
     width: 1100px;

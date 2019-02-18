@@ -357,6 +357,9 @@ body {
 #team .card .card-body p i {
   margin-right: 5px; }
 
+#team .row .card {
+  max-width: 255px; }
+
 #contact {
   position: relative;
   width: 100%;
@@ -395,12 +398,14 @@ body {
   margin-left: -5%; }
 
 #contact .contact-session {
+  position: relative;
   background: #ffc60c;
   width: 100%;
+  height: auto;
   margin: 50px 0; }
 
 .contact-form {
-  position: relative;
+  position: absolute;
   top: 0;
   margin: auto;
   width: 1100px;
