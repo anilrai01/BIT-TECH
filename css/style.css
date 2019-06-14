@@ -504,9 +504,13 @@ h1 {
 
 
 .footer{
+<<<<<<< HEAD
   position: relative;
   width: 100%;
   height: auto;
+=======
+  background:rgba(55, 60, 63, 0.9);
+>>>>>>> 13ea439096644095eb9b50fbac2ea074688e20a6
   padding:60px 0px;
 
   color:#fff;
